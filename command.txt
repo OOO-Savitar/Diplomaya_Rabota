@@ -1,0 +1,6 @@
+/ Преобразовать файл интерфейса
+pyuic5.exe ui/ui_designer.ui -o ui/ui_designer.py -x
+
+
+/ Преобразовать файл ресурсов
+pyuic5.exe ui/ui_designer.ui -o ui_designer.py -x

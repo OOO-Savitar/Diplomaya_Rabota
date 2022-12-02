@@ -1,16 +1,31 @@
-# This is a sample Python script.
+import sys
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from PyQt5 import QtCore, QtGui, QtWidgets
 
+from PyQt5.QtGui import QIcon
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+from ui.ui_designer import Ui_MainWindow
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+class MainClass(QtWidgets.QMainWindow):
+    def __init__(self):
+        super(MainClass, self).__init__()
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
+        self.init_UI()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    def init_UI(self):
+        self.setWindowTitle('Экзамены ПДД')
+        self.setWindowIcon(QIcon('icon.png'))
+        self.ui.stackedWidget.setCurrentIndex(0)
+        self.ui.pushButton.clicked.connect(self.goto_page)
+
+    def goto_page(self):
+        self.setWindowTitle('123')
+
+
+app = QtWidgets.QApplication([])
+application = MainClass()
+application.show()
+
+sys.exit(app.exec())

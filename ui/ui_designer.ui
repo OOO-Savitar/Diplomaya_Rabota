@@ -74,7 +74,7 @@
      <set>Qt::ImhNone</set>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page_1">
      <widget class="QFrame" name="frame_1">
@@ -473,13 +473,13 @@ border-left: 1px solid #29b11f;</string>
         </property>
        </widget>
       </widget>
-      <widget class="QFrame" name="frame_start_1">
+      <widget class="QPushButton" name="button_start_1">
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-1</y>
-         <width>690</width>
-         <height>201</height>
+         <y>0</y>
+         <width>691</width>
+         <height>191</height>
         </rect>
        </property>
        <property name="cursor">
@@ -488,11 +488,8 @@ border-left: 1px solid #29b11f;</string>
        <property name="styleSheet">
         <string notr="true">background-color: transparent;</string>
        </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
+       <property name="text">
+        <string/>
        </property>
       </widget>
       <zorder>frame_1_image</zorder>
@@ -501,7 +498,7 @@ border-left: 1px solid #29b11f;</string>
       <zorder>buttonStart_1</zorder>
       <zorder>frame_progress</zorder>
       <zorder>frame_stat_progress</zorder>
-      <zorder>frame_start_1</zorder>
+      <zorder>button_start_1</zorder>
      </widget>
      <widget class="QFrame" name="frame_2">
       <property name="geometry">
@@ -602,13 +599,13 @@ background-color: rgb(39, 39, 39);</string>
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QFrame" name="frame_start_2">
+      <widget class="QPushButton" name="button_start_2">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
          <width>691</width>
-         <height>121</height>
+         <height>120</height>
         </rect>
        </property>
        <property name="cursor">
@@ -617,11 +614,8 @@ background-color: rgb(39, 39, 39);</string>
        <property name="styleSheet">
         <string notr="true">background-color: transparent;</string>
        </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
+       <property name="text">
+        <string/>
        </property>
       </widget>
      </widget>
@@ -741,6 +735,26 @@ color: #fff;</string>
         </property>
        </widget>
       </widget>
+      <widget class="QPushButton" name="button_show_fav">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>101</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 50%;
+background-color: transparent</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
      </widget>
      <widget class="QLabel" name="label_stat">
       <property name="geometry">
@@ -858,6 +872,26 @@ color: #fff;</string>
         </property>
        </widget>
       </widget>
+      <widget class="QPushButton" name="button_show_stat">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>101</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 50%;
+background-color: transparent</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
      </widget>
      <widget class="QFrame" name="frame_errors">
       <property name="geometry">
@@ -951,6 +985,26 @@ color: #fff;</string>
          <string>0</string>
         </property>
        </widget>
+      </widget>
+      <widget class="QPushButton" name="button_show_errors">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>101</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 50%;
+background-color: transparent</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
       </widget>
      </widget>
      <widget class="QLabel" name="label_errors">
@@ -1078,13 +1132,13 @@ background-color: rgb(39, 39, 39);</string>
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QFrame" name="frame_start_4">
+      <widget class="QPushButton" name="button_start_3">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
          <width>691</width>
-         <height>121</height>
+         <height>120</height>
         </rect>
        </property>
        <property name="cursor">
@@ -1093,11 +1147,8 @@ background-color: rgb(39, 39, 39);</string>
        <property name="styleSheet">
         <string notr="true">background-color: transparent;</string>
        </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
+       <property name="text">
+        <string/>
        </property>
       </widget>
      </widget>
@@ -1149,6 +1200,22 @@ background-color: rgb(39, 39, 39);</string>
         <string>РЭЙ Экзамены ПДД</string>
        </property>
       </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>91</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>ЖМИ</string>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="page_2">
@@ -1277,7 +1344,7 @@ QPushButton:hover {
         <string notr="true">color: rgb(159, 159, 159);</string>
        </property>
        <property name="text">
-        <string>Б40</string>
+        <string>Б</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1321,7 +1388,7 @@ QPushButton:hover {
 font-weight: 500;</string>
        </property>
        <property name="text">
-        <string>Вопрос №20</string>
+        <string>Вопрос №</string>
        </property>
       </widget>
       <widget class="QFrame" name="frame_27">
@@ -1560,7 +1627,7 @@ border: none;</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="page_bilets">
        <widget class="QFrame" name="frame_bilet_1">
@@ -2502,28 +2569,6 @@ background-color: rgb(39, 39, 39);</string>
           <bool>false</bool>
          </property>
         </widget>
-        <widget class="QFrame" name="frame_start_5">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>120</y>
-           <width>691</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: transparent;</string>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-        </widget>
         <widget class="QFrame" name="frame_16">
          <property name="geometry">
           <rect>
@@ -2589,10 +2634,29 @@ background-color: #007ff4;</string>
           <bool>true</bool>
          </property>
         </widget>
+        <widget class="QPushButton" name="button_start_exams_1">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>691</width>
+           <height>161</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
         <zorder>frame_16</zorder>
-        <zorder>frame_start_5</zorder>
         <zorder>label_20</zorder>
         <zorder>label_22</zorder>
+        <zorder>button_start_exams_1</zorder>
        </widget>
        <widget class="QFrame" name="frame_17">
         <property name="geometry">
@@ -2637,28 +2701,6 @@ background-color: rgb(39, 39, 39);</string>
          </property>
          <property name="scaledContents">
           <bool>false</bool>
-         </property>
-        </widget>
-        <widget class="QFrame" name="frame_start_6">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>130</y>
-           <width>691</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: transparent;</string>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
          </property>
         </widget>
         <widget class="QFrame" name="frame_18">
@@ -2726,6 +2768,25 @@ background-color: rgb(195, 230, 249);</string>
           <bool>true</bool>
          </property>
         </widget>
+        <widget class="QPushButton" name="button_start_exams_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>691</width>
+           <height>161</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
        </widget>
        <widget class="QFrame" name="frame_19">
         <property name="geometry">
@@ -2770,28 +2831,6 @@ background-color: rgb(39, 39, 39);</string>
          </property>
          <property name="scaledContents">
           <bool>false</bool>
-         </property>
-        </widget>
-        <widget class="QFrame" name="frame_start_7">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>130</y>
-           <width>691</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: transparent;</string>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
          </property>
         </widget>
         <widget class="QFrame" name="frame_20">
@@ -2853,10 +2892,29 @@ background-color: rgb(195, 230, 249);</string>
           <string notr="true">color: rgb(151, 151, 151);</string>
          </property>
          <property name="text">
-          <string>все 800 вопросов, без лимита оп времени и оишбкам</string>
+          <string>все 800 вопросов, без лимита оп времени и ошибкам</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="button_start_exams_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>691</width>
+           <height>161</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;</string>
+         </property>
+         <property name="text">
+          <string/>
          </property>
         </widget>
        </widget>
