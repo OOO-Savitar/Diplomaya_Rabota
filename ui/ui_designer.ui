@@ -1189,7 +1189,14 @@ background-color: rgb(39, 39, 39);</string>
         <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
-        <string notr="true">border: none;</string>
+        <string notr="true">QPushButton {
+	border: none;
+}
+
+QPushButton:hover {
+	
+	background-color: rgb(81, 81, 81);
+}</string>
        </property>
        <property name="text">
         <string/>
